@@ -1,0 +1,56 @@
+@use "sass:math";
+@use "sass:map";
+@use "./variables" as vars;
+
+@mixin textPreset1 {
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+@mixin textPreset2 {
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+@mixin textPreset3 {
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+@mixin textPreset4 {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+@mixin textPreset5 {
+  font-size: 18px;
+  line-height: math.div(24, 18);
+  letter-spacing: 0;
+}
+
+@mixin textPreset6 {
+  font-size: 15px;
+  line-height: math.div(26, 15);
+  letter-spacing: 0;
+}
+
+@mixin textPreset7 {
+  font-size: 14px;
+  line-height: math.div(24, 14);
+  letter-spacing: 4.38;
+}
+
+@mixin mq($breakpoint: md) {
+  @media #{map.get(vars.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+//line height
+@mixin lh($line, $fz) {
+  line-height: math.div($line, $fz);
+}

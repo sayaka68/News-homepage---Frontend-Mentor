@@ -1,0 +1,24 @@
+@use "../global" as global;
+@use "../global/variables" as *;
+
+:root {
+  --white: #{$white};
+  --black: #{$black};
+  --gray300: #{$gray300};
+  --gra200: #{$gray200};
+  --navy950: #{$navy950};
+  --navy600: #{$navy600};
+  --gold400: #{$gold400};
+  --red500: #{$red500};
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: var(--navy950);
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}

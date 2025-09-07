@@ -1,0 +1,17 @@
+//色
+$black: #000;
+$white: #fff;
+$gray300: #c5c6ce;
+$gray200: #d8d8d8;
+$navy950: #00001a;
+$navy600: #5e607a;
+$gold400: #e9aa52;
+$red500: #f15d51;
+
+//breakpoints
+$breakpoints: (
+  "xs": "screen and (min-width:1px) and ( max-width:370px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 1024px)",
+  // "xl": "screen and (min-width: 1280px)",
+);
